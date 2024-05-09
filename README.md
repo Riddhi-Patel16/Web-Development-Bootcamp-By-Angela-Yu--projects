@@ -1,2 +1,11 @@
-# Web-Development-Bootcamp-projects
-This repository contains projects completed by participants of a web development bootcamp course taught by Dr. Angela Yu on Udemy.
+# Web Development Bootcamp Projects Repository
+
+Welcome to the Web Development Bootcamp Projects repository! This repository contains projects completed as part of the web development bootcamp course taugth by Angela Yu on Udemy.
+
+## About
+
+This repository houses a collection of projects developed by participants of the web development bootcamp course. These projects are designed to showcase the skills and knowledge gained throughout the duration of the course.
+
+
+
+
