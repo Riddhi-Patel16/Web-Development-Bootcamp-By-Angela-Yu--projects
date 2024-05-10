@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.D. College of Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="college_about_header">
+        <nav class="college_header-nav">
+            <a href="./index.html" class="college_header-nav-logo">
+                LDCE</a>
+                <span class="material-symbols-outlined" onclick="ShowMenu()" >
+                    menu
+                    </span>
+                <div class="college_header-nav-links" id="college_header-nav-links">
+                    <span class="material-symbols-outlined" id="college_header-nav-links-close"  onclick="hideMenu()">
+                        close
+                        </span>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <a href="./Contact.html">Contact</a>
+                </div>
+        </nav>
+            <h1>About Us</h1>
+    </section>
+    <section class="college_about-content">
+        <div class="college_about-content-row">
+            <div class="college_about-content-row-col">
+                <h1>We are the Gujarat's Best College</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid id labore deserunt dicta accusantium impedit.</p>
+                <a href="#" class="college_header-content-btn college_about-content-btn  ">Explore Now</a>
+            </div>
+            <div class="college_about-content-row-col">
+                <img src="./Assetes/about.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="college_footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ex velit reiciendis magni harum sunt.
+        </p>
+        <div class="college_footer-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+
+        </div>
+        <p>Copy Right @ Riddhi Patel</p>
+
+    </section>
+    <script>
+        function ShowMenu()
+        {
+            document.getElementById("college_header-nav-links").style.right="0";
+        }
+        function hideMenu()
+        {
+            document.getElementById("college_header-nav-links").style.right="-200px";
+        }
+    </script>
+</body>
+</html>

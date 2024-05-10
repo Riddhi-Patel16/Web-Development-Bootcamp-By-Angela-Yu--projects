@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.D. College of Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="college_header">
+        <nav class="college_header-nav">
+            <a href="./index.html" class="college_header-nav-logo">
+                LDCE</a>
+                <span class="material-symbols-outlined" onclick="ShowMenu()" >
+                    menu
+                    </span>
+                <div class="college_header-nav-links" id="college_header-nav-links">
+                    <span class="material-symbols-outlined" id="college_header-nav-links-close"  onclick="hideMenu()">
+                        close
+                        </span>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+        </nav>
+        <div class="college_header-content">
+            <h1>L . D. College of Engineering</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minima modi libero sunt iste dolor.</p>
+            <a href="" class="college_header-content-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <section class="college_courses">
+        <h1>Courses We Offer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt adipisci dolorum tenetur ab obcaecati?</p>
+        <div class="college_courses-row">
+            <div class="college_courses-row-col">
+                <h3>Under Graduate Courses</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia distinctio nobis sapiente molestias beatae magni!</p>
+            </div>
+            <div class="college_courses-row-col">
+                <h3>Post Graduate Courses</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia distinctio nobis sapiente molestias beatae magni!</p>
+            </div>
+        </div>
+    </section>
+    <section class="college_campus">
+        <h1>Our Beautiful Campus</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas provident dolorem, suscipit vel quia dolorum.</p>
+        <div class="college_campus-row">
+            <div class="college_campus-row-col">
+                <img src="./Assetes/campus1.jpg" alt="">
+                <div class="college_campus-row-col-layer">
+                   <h3>Campus</h3> 
+                </div>
+            </div>
+            <div class="college_campus-row-col">
+                <img src="./Assetes/campus1.jpg" alt="">
+                <div class="college_campus-row-col-layer">
+                   <h3>CAMPUS</h3> 
+                </div>
+            </div>
+            <div class="college_campus-row-col">
+                <img src="./Assetes/campus1.jpg" alt="">
+                <div class="college_campus-row-col-layer">
+                   <h3>CAMPUS</h3> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="college_facilities">
+        <h1>Our College Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque, consequuntur natus numquam veniam fugiat!</p>
+        <div class="college_facilities-row">
+            <div class="college_facilities-row-col">
+                <img src="./Assetes/library.png" alt="">
+                <h3>library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis, nulla qui dolorum veritatis quasi!</p>
+            </div>
+            <div class="college_facilities-row-col">
+                <img src="./Assetes/library.png" alt="">
+                <h3>library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis, nulla qui dolorum veritatis quasi!</p>
+            </div>
+            <div class="college_facilities-row-col">
+                <img src="./Assetes/library.png" alt="">
+                <h3>library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis, nulla qui dolorum veritatis quasi!</p>
+            </div>
+        </div>
+    </section>
+    <section class="college_footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ex velit reiciendis magni harum sunt.
+        </p>
+        <div class="college_footer-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+
+        </div>
+        <p>Copy Right @ Riddhi Patel</p>
+
+    </section>
+    <script>
+        function ShowMenu()
+        {
+            document.getElementById("college_header-nav-links").style.right="0";
+        }
+        function hideMenu()
+        {
+            document.getElementById("college_header-nav-links").style.right="-200px";
+        }
+    </script>
+</body>
+</html>

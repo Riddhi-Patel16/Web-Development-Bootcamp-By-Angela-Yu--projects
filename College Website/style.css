@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.college_header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Assetes/home.jpg);  
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.college_about_header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Assetes/background.jpg);  
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.college_about_header h1{
+    color: #fff;
+    margin-top: 65px;
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.college_header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.college_header-nav-logo{
+    width: 150px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.college_header-nav-links{
+    display: flex;
+    gap: 30px;
+    color:#fff ;
+    font-size: 20px;
+}
+.college_header-nav-links a::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;    
+    transition: 0.5s;
+    margin: auto;
+}
+.college_header-nav-links a:hover::after{
+    width: 100%;    
+}
+.college_header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 90%;
+}
+
+.college_header-content h1{
+    font-size: 62px;
+}
+.college_header-content p{
+    font-size: 14px;
+    margin: 10px 0 40px 0;
+}
+.college_header-content-btn{
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.college_header-content-btn:hover{
+    background-color: #f44336;
+    border: 1px solid #f44336;
+    transition: 1s;
+}
+.college_header-nav span{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+.college_courses{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 100px;
+}
+.college_courses h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.college_courses p,.college_campus p,.college_facilities p,.college_footer p,.college_about-content-row-col p,.college_contact-content-row-col p{
+    line-height: 22px;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    font-weight: 300;
+}
+.college_courses-row,.college_campus-row,.college_facilities-row,.college_about-content-row,.college_contact-content-row{
+    display: flex;
+    margin-top: 5%;
+    gap: 20px;
+    justify-content: center;
+}
+.college_courses-row-col{
+    flex-basis: 30%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.college_courses-row-col h3{
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+.college_courses-row-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.college_campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.college_campus-row-col{
+    border-radius: 10px;
+    flex-basis: 30%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    height: 70%;
+    width: 70%;
+}
+.college_campus-row-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    image-resolution: 700dpi;
+}
+.college_campus-row-col-layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    
+}
+.college_campus-row-col-layer h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+.college_campus-row-col-layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.college_campus-row-col-layer:hover{
+    background-color: rgba(226,0,0,0.7);
+}
+.college_facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.college_facilities-row-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.college_header-nav > a{
+    text-align: left;
+}
+.college_facilities-row-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.college_facilities-row-col h3{
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.college_facilities-row-col p{
+    padding: 0;
+}
+.college_footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.college_footer h4{
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.college_footer-icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+.college_about-content-row-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.college_about-content{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.college_about-content-row-col img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.college_about-content-row-col h1{
+    padding-top:0 ;
+}
+.college_about-content-row-col p{
+    padding: 15px 0 25px ;
+}
+.college_about-content-btn{
+    color: #f44336;
+    border: 1px solid #f44336;
+    background: transparent;
+}
+.college_about-content-btn:hover{
+    color: #fff;
+}
+.college_contact-content{
+    width: 80%;
+    margin: auto;
+}
+.college_contact-content-row-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.college_contact-content-row-col div{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.college_contact-content-row-col i{
+    font-size: 28px;
+    color: #f44336;   
+    margin: 10px;
+    margin-right: 30px;
+}
+.college_contact-content-row-col p{
+    padding: 0px;
+}
+.college_contact-content-row-col h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.college_contact-content-row-col input,.college_contact-content-row-col textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 17px;
+    box-sizing: border-box;
+}
+@media(max-width:700px)
+{
+    .college_header-content h1{
+        font-size: 34px;
+    } 
+    .college_header-nav-links{
+        display: flex;
+        gap: 10px;
+        color:#fff ;
+        font-size: 20px;
+        flex-direction: column;
+        background-color: #f44336;
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        right:-200px;
+        width:200px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .college_header-nav-links a{
+        padding-left: 50px ;
+        width: fit-content;
+    }
+    .college_header-nav-links span{
+        margin: 20px;
+        cursor: pointer;
+        width: fit-content;
+    }
+    .college_header-nav span{
+        display: block;
+    }
+    .college_header-nav-links a::after{
+        background-color: #fff;
+    }
+    .college_courses-row,.college_campus-row,.college_facilities-row,.college_about-content-row,.college_contact-content-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
