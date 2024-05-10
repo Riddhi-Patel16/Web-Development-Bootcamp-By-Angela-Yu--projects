@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="home">
+    <div class="container">
+        <header>Registration Form</header>
+        <div class="form-body">
+            <form action="#" >
+                <div class="page slidepage">
+                    <div class="title">Basic Information</div>
+                    <div class="field">
+                        <div class="label" >First Name* <span class="error" id="ferror"></span></div>
+                        <input type="text" name="" id="fname" onkeyup="fnamev()">
+                    </div>
+                    <div class="field">
+                        <div class="label">Last Name* <span class="error" id="lerror"></span></div>
+                        <input type="text" name="" id="lname" onkeyup="lnamev()">
+                    </div>
+                    <div class="field">
+                        <div class="label">State*</div>
+                        <select name="" id="state">
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharastra">Maharastra</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Kerla">Kerla</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="next" onclick="page1(event)">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Contact Information:</div>
+                    <div class="field">
+                        <div class="label">Email Address* <span class="error" id="evalid"></span></div>
+                        <input type="text" name="" id="email" onkeyup="evalid()">
+                    </div>
+                    <div class="field">
+                        <div class="label">Phone Number* <span class="error" id="numvalid"></span></div>
+                        <input type="text" name="" id="pnumber" onkeyup="numvalid()">
+                    </div>
+                    <div class="field">
+                        <div class="label">Address</div>
+                        <input type="text" name="" id="address">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="next" onclick="page2(event)">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Date of Birth</div>
+                    <div class="field">
+                        <div class="label">Date* <span class="error" id="derror"></span></div>
+                        <input type="text " onkeyup="dob()" placeholder="DD-MM-YYYY" id="DOB">
+                    </div>
+                    <div class="field">
+                        <div class="label">Gender* <span class="error" id="gerror"></span></div>
+                        <div class="labels">
+                        <label for="male">Male</label>
+                        <input  class="radio"  type="radio" name="gender" id="male" value="male">
+                        <label for="female">Female</label>
+                        <input class="radio" type="radio" name="gender" id="female" value="female">
+                        <label for="other">Other</label>
+                        <input class="radio" type="radio"  id="other" name="gender" value="other">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="label">Education*</div>
+                        <select name="" id="education">
+                            <option value="Graduate">Graduate</option>
+                            <option value="Post-Graduate">Post-Graduate</option>
+                            <option value="12th-Pass">12th-Pass</option>
+                            <option value="10th-Pass">10th-Pass</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="next" onclick="page3(event)">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Login Details</div>
+                    <div class="field">
+                        <div class="label">Username* <span class="error" id="uerror"></span></div>
+                        <input type="text" name="" id="uname" onkeyup="uvalid()">
+                    </div>
+                    <div class="field">
+                        <div class="label">Password* <span class="error" id="perror"></span></div>
+                        <input  onkeyup="passvalid()" type="password" id="pswd" >
+                    </div>
+                    <div class="field">
+                        <div class="label">Profile photo</div>
+                        <input type="file" name=""  accept="image/*" id="file">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="submit" type="submit" onclick="page4(event)">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
